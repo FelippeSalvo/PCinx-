@@ -4,7 +4,7 @@ builder = "NIXPACKS"
 # Restaura pacotes e publica em Release na pasta ./publish
 buildCommand = "dotnet restore && dotnet publish -c Release -o ./publish"
 # Comando para rodar a API
-startCommand = "dotnet ./publish/SeuProjeto.dll"
+startCommand = "dotnet ./publish/pcinx-api.dll"
 
 [env]
 # Força o Railway a usar o SDK .NET 8.0.100
