@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// CORS para permitir o front rodando local (file:// ou http://localhost)
+// CORS para permitir o front rodando local 
 builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
 {
     p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
