@@ -84,7 +84,7 @@ static class Compatibility
     string? GpuAttr(string key) => gpu?.Attributes?.GetValueOrDefault(key);
     string? PsuAttr(string key) => psu?.Attributes?.GetValueOrDefault(key);
 
-    // Verificação de peças essenciais 
+    // Verificação de peças essenciais (agora como ERRO)
     var requiredCats = new[] { "CPU", "Motherboard", "RAM", "Storage", "PSU" };
     foreach (var rc in requiredCats)
     {
